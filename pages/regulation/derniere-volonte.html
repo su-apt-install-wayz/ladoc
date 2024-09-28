@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <link rel="stylesheet" href="../../assets/css/style.css">
+    <link rel="stylesheet" href="../../assets/css/input.css">
+    <link rel="stylesheet" href="../../assets/css/accordion.css">
+    <title>Règlement | La dernière volonté</title>
+</head>
+
+<body>
+    <header id="nav" class="sidebar">
+        <div class="logo">
+            <a href="../../index.html">LaDoc<span class="colorLogo">.wiki</span></a>
+        </div>
+    
+        <div class="border"></div>
+    
+        <ul class="list">
+            <a href="../../index.html" class="list-item">Accueil</a>
+    
+            <ul class="secondary-list">
+                <li class="list-item title">Mode BaJail</li>
+    
+                <a href="../nous-decouvrir.html" class="list-item">Nous découvrir</a>
+                <a href="../reglement.html" class="list-item">Le règlement</a>
+                <a href="../liens.html" class="list-item">Liens utiles</a>
+
+                <li class="list-item title">Liens directs</li>
+    
+                <a href="toto" class="list-item">Active</a>
+                <a href="toto" class="list-item">CSSBans</a>
+                <a href="https://discord.gg/stQuAKWNPc" target="blank" class="list-item">Discord</a>
+            </ul>
+    
+        </ul>
+
+        <div class="inputIPServer">
+            <code id="ipAddress">cs.ladoc.wiki:27396</code>
+            <button id="ipAddressButton" onclick="copyIP()">Copier</button>
+        </div>
+    </header>
+
+    <main>
+        <div class="content">
+            <div class="title">La dernière volonté</div>
+
+            <p class="desc big">Quand il ne reste plus qu'un seul prisonnier en vie il a le droit à sa "DV" (Dernière Volonté). Elle consiste a faire un mini-jeu a sélectionner parmi la liste disponible.</p>
+
+            <div class="accordion">
+                <div class="accordion-item">
+                    <button id="accordion-button-1" aria-expanded="true">
+                        <span class="accordion-title">Autorisations / Interdictions</span>
+                        <span class="material-symbols-rounded icon" aria-hidden="true">expand_more</span>
+                    </button>
+                    <div class="accordion-content">
+                        <ul class="desc">
+                            <li>Il est interdit en CT ou T d'aller a l'infirmerie pendant une DV.</li>
+                            <li>Pour la DV "course" le CT choisi doit voir le point de départ et d'arriver. La course peut passer par des zones CT ou neutre mais pas dans un conduit.</li>
+                            <li>Avant de prendre la DV, le chef des gardiens demande au prisonnier si il souhaite prendre sa DV. <br> Si la réponse est "oui" ou que le prisonnier a déjà tapé "!dv" dans le chat, il n'a plus le droit de la refuser. <br> Si la réponse est "non", c'est un refus de DV, dans ce cas le prisonnier est déclaré hostile et n'a plus le droit de prendre sa DV.</li>
+                            <li>Si le prisonnier est hostile (voir <a href="hostilite.html">Hostilité</a>) il ne peut prendre aucune DV.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="../../assets/js/navbar.js"></script>
+    <script src="../../assets/js/sidebar.js"></script>
+    <script src="../../assets/js/accordion.js"></script>
+
+</body>
+
+</html>

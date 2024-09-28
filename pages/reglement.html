@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="../assets/css/cards.css">
+    <link rel="stylesheet" href="../assets/css/input.css">
+    <title>LaDoc.wiki | Le règlement</title>
+</head>
+
+<body>
+    <header id="nav" class="sidebar">
+        <div class="logo">
+            <a href="../index.html">LaDoc<span class="colorLogo">.wiki</span></a>
+        </div>
+    
+        <div class="border"></div>
+    
+        <ul class="list">
+            <a href="../index.html" class="list-item">Accueil</a>
+    
+            <ul class="secondary-list">
+                <li class="list-item title">Mode BaJail</li>
+    
+                <a href="./nous-decouvrir.html" class="list-item">Nous découvrir</a>
+                <a href="./reglement.html" class="list-item">Le règlement</a>
+                <a href="./liens.html" class="list-item">Liens utiles</a>
+
+                <li class="list-item title">Liens directs</li>
+    
+                <a href="toto" class="list-item">Active</a>
+                <a href="toto" class="list-item">CSSBans</a>
+                <a href="https://discord.gg/stQuAKWNPc" target="blank" class="list-item">Discord</a>
+            </ul>
+    
+        </ul>
+
+        <div class="inputIPServer">
+            <code id="ipAddress">cs.ladoc.wiki:27396</code>
+            <button id="ipAddressButton" onclick="copyIP()">Copier</button>
+        </div>
+    </header>
+
+    <main>
+        <div class="content">
+            <div class="title">Règlement</div>
+
+            <p class="desc big">Liste de toutes les sections du règlement.</p>
+
+            <div id="formulaire" class="search_form">
+                <div class="search">
+                    <i class="uil uil-search"></i>
+                    <input id="searchInput" type="text" placeholder="Rechercher une section">
+                </div>
+            </div>
+
+            <ul style="margin-top: 30px;" class="list-card" id="cards">
+                <a href="./regulation/gardiens.html" class="card">
+                    <div class="card-content">
+                        <div class="card-image">
+                            <img src="../assets/img/regulation/gardiens.png">
+                        </div>
+                        <div class="card-info-wrapper">
+                            <div class="card-info">
+                                <div class="card-info-title">
+                                    <h3>Les Gardiens</h3>
+                                    <h4>Règles des gardiens</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <a href="./regulation/prisonniers.html" class="card">
+                    <div class="card-content">
+                        <div class="card-image">
+                            <img src="../assets/img/regulation/terroristes.png">
+                        </div>
+                        <div class="card-info-wrapper">
+                            <div class="card-info">
+                                <div class="card-info-title">
+                                    <h3>Les Prisonniers</h3>
+                                    <h4>Règles des prisonniers</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <a href="./regulation/hostilite.html" class="card">
+                    <div class="card-content">
+                        <div class="card-image">
+                            <img src="">
+                        </div>
+                        <div class="card-info-wrapper">
+                            <div class="card-info">
+                                <div class="card-info-title">
+                                    <h3>L'hostilité</h3>
+                                    <h4>Règles sur l'hostilité</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <a href="./regulation/derniere-volonte.html" class="card">
+                    <div class="card-content">
+                        <div class="card-image">
+                            <img src="">
+                        </div>
+                        <div class="card-info-wrapper">
+                            <div class="card-info">
+                                <div class="card-info-title">
+                                    <h3>La Dernière Volonté</h3>
+                                    <h4>Règles sur la dernière volonté</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <a href="./regulation/guncheck.html" class="card">
+                    <div class="card-content">
+                        <div class="card-image">
+                            <img src="">
+                        </div>
+                        <div class="card-info-wrapper">
+                            <div class="card-info">
+                                <div class="card-info-title">
+                                    <h3>Le guncheck</h3>
+                                    <h4>Règles sur le guncheck</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <a href="./regulation/ordres.html" class="card">
+                    <div class="card-content">
+                        <div class="card-image">
+                            <img src="">
+                        </div>
+                        <div class="card-info-wrapper">
+                            <div class="card-info">
+                                <div class="card-info-title">
+                                    <h3>Les ordres</h3>
+                                    <h4>Règles sur les ordres</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <a href="./regulation/zones.html" class="card">
+                    <div class="card-content">
+                        <div class="card-image">
+                            <img src="">
+                        </div>
+                        <div class="card-info-wrapper">
+                            <div class="card-info">
+                                <div class="card-info-title">
+                                    <h3>Les zones</h3>
+                                    <h4>Règles sur les ordres abusifs</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <a href="./regulation/jeux.html" class="card">
+                    <div class="card-content">
+                        <div class="card-image">
+                            <img src="">
+                        </div>
+                        <div class="card-info-wrapper">
+                            <div class="card-info">
+                                <div class="card-info-title">
+                                    <h3>Les jeux</h3>
+                                    <h4>Règles sur les ordres abusifs</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <a href="./regulation/jacques-a-dit.html" class="card">
+                    <div class="card-content">
+                        <div class="card-image">
+                            <img src="">
+                        </div>
+                        <div class="card-info-wrapper">
+                            <div class="card-info">
+                                <div class="card-info-title">
+                                    <h3>Le Jacques a dit</h3>
+                                    <h4>Règles sur les ordres abusifs</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </ul>
+        </div>
+    </main>
+
+    <script src="../assets/js/navbar.js"></script>
+    <script src="../assets/js/sidebar.js"></script>
+    <script src="../assets/js/overCardEffect.js"></script>
+    <script src="../assets/js/searchRegulation.js"></script>
+</body>
+
+</html>

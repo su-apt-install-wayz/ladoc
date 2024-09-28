@@ -1,0 +1,187 @@
+@import url('init.css');
+
+.list-card {
+    display: flex;
+    flex-wrap: wrap;
+
+    justify-content: center;
+
+    gap: 8px;
+
+    width: 100%;
+}
+
+.list-card:hover>.card::after {
+    opacity: 1;
+}
+
+.card {
+    position: relative;
+
+    background-color: var(--border-color);
+
+    border-radius: 10px;
+
+    cursor: pointer;
+
+    display: flex;
+    flex-direction: column;
+
+    height: 260px;
+    width: 300px;
+
+    flex: 1 0 300px;
+}
+
+.card.summit { background-color: #FF00B9; }
+.card.battlePass { background-color: #FFA71B;}
+.card.icon { background-color: #F61156; }
+
+.list-card.cars .card{
+    width: 475px;
+
+    flex: 1 0 475px;
+}
+
+.card:hover::before {
+    opacity: 1;
+}
+
+.card::before,
+.card::after {
+    content: "";
+    position: absolute;
+    left: 0px;
+    top: 0px;
+
+    height: 100%;
+    width: 100%;
+
+    opacity: 0;
+
+    border-radius: inherit;
+
+    transition: opacity 500ms;
+}
+
+.card::before {
+    background: radial-gradient(800px circle at var(--mouse-x) var(--mouse-y),
+            var(--card-color-80),
+            transparent 40%);
+    z-index: 3;
+}
+
+.card::after {
+    background: radial-gradient(600px circle at var(--mouse-x) var(--mouse-y),
+            var(--card-color-66),
+            transparent 40%);
+    z-index: 1;
+}
+
+.card>.card-content {
+    background-color: var(--card-color-100);
+
+    border-radius: inherit;
+
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+
+    inset: 1px;
+
+    padding: 10px;
+
+    position: absolute;
+    z-index: 2;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    color: var(--text-color);
+    font-weight: 400;
+
+    margin: 0px;
+}
+
+i {
+    color: var(--text-color);
+}
+
+.card-image {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+
+    height: 140px;
+    width: 100%;
+    
+    overflow: hidden;
+}
+
+.list-card .card-image img {
+    width: 80%;
+    height: 80%;
+
+    object-fit: contain;
+
+    margin-top: 0;
+
+    border-radius: 0;
+}
+
+.card-info-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-grow: 1;
+
+    padding: 0px 20px;
+}
+
+.card-info {
+    display: flex;
+    align-items: flex-start;
+
+    gap: 10px;
+}
+
+.list-card .card-info img.flag {
+    height: 20px;
+    width: 30px;
+
+    margin-top: 0;
+
+    object-fit: fill;
+
+    border-radius: 2px;
+}
+
+.card-info-title>h3 {
+    font-size: 1.1em;
+    line-height: 20px;
+}
+
+.card-info-title>h4 {
+    color: var(--text-color);
+    font-size: 0.85em;
+    margin-top: 8px;
+}
+
+
+
+
+@media screen and (max-width: 830px){
+    .list-card .card {
+        width: 260px;
+    
+        flex: 1 0 260px;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .list-card .card-info {
+        flex-direction: column;
+    }
+}

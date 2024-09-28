@@ -1,0 +1,93 @@
+@import url('init.css');
+
+.accordion {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.accordion hr {
+    width: 100%;
+    height: 1px;
+    outline: none;
+    border: none;
+    background: var(--text-color-gray);
+    border-radius: 6px;
+}
+
+.accordion .accordion-item {
+    /* background: var(--c-background); */
+    padding: 1rem;
+    border-radius: 6px;
+}
+
+.accordion button {
+    display: flex;
+    width: 100%;
+    color: var(--text-color-gray);
+    font-size: 20px;
+    font-weight: 400;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+    border: none;
+    outline: none;
+    background: none;
+    padding: 0 1rem;
+    cursor: pointer;
+}
+
+.accordion button .accordion-title {
+    padding: 1em 1.5em 1em 0;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.accordion button .accordion-title span {
+    color: var(--primary-color);
+}
+
+.accordion button .icon {
+    font-size: 30px;
+    color: var(--primary-color);
+}
+
+
+.accordion button[aria-expanded=true] {
+    color: var(--primary-color);
+}
+
+.accordion button[aria-expanded=true] .icon {
+    transform: rotate(-180deg);
+}
+
+.accordion button[aria-expanded=true]+.accordion-content {
+    opacity: 1;
+    max-height: 100em;
+    transition: all 500ms linear;
+    will-change: opacity, max-height;
+}
+
+.accordion .accordion-content {
+    opacity: 0;
+    max-height: 0;
+    overflow: hidden;
+    transition: opacity 300ms linear, max-height 300ms linear;
+    will-change: opacity, max-height;
+    display: flex;
+    flex-direction: column;
+}
+
+.accordion .accordion-content hr {
+    width: 100%;
+    height: 1px;
+    border: none;
+    outline: none;
+    background: var(--border-color);
+    border-radius: 6px;
+}
+
+.accordion .accordion-content video {
+    border-radius: 6px;
+}

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <link rel="stylesheet" href="../../assets/css/style.css">
+    <link rel="stylesheet" href="../../assets/css/input.css">
+    <link rel="stylesheet" href="../../assets/css/accordion.css">
+    <title>Règlement | Les jeux</title>
+</head>
+
+<body>
+    <header id="nav" class="sidebar">
+        <div class="logo">
+            <a href="../../index.html">LaDoc<span class="colorLogo">.wiki</span></a>
+        </div>
+    
+        <div class="border"></div>
+    
+        <ul class="list">
+            <a href="../../index.html" class="list-item">Accueil</a>
+    
+            <ul class="secondary-list">
+                <li class="list-item title">Mode BaJail</li>
+    
+                <a href="../nous-decouvrir.html" class="list-item">Nous découvrir</a>
+                <a href="../reglement.html" class="list-item">Le règlement</a>
+                <a href="../liens.html" class="list-item">Liens utiles</a>
+
+                <li class="list-item title">Liens directs</li>
+    
+                <a href="toto" class="list-item">Active</a>
+                <a href="toto" class="list-item">CSSBans</a>
+                <a href="https://discord.gg/stQuAKWNPc" target="blank" class="list-item">Discord</a>
+            </ul>
+    
+        </ul>
+
+        <div class="inputIPServer">
+            <code id="ipAddress">cs.ladoc.wiki:27396</code>
+            <button id="ipAddressButton" onclick="copyIP()">Copier</button>
+        </div>
+    </header>
+
+    <main>
+        <div class="content">
+            <div class="title">Les jeux</div>
+
+            <p class="desc big">Cette rubrique a pour but de réglementer à propos des jeux à faire aux prisonniers</p>
+
+            <div class="accordion">
+                <div class="accordion-item">
+                    <button id="accordion-button-1" aria-expanded="false">
+                        <span class="accordion-title">Règles</span>
+                        <span class="material-symbols-rounded icon" aria-hidden="true">expand_more</span>
+                    </button>
+                    <div class="accordion-content">
+                        <ul class="desc">
+                            <li>Les gardiens doivent faire faire des jeux aux prisonniers.<br>Ils doivent priorisé les jeux des maps avant les jeux hors maps (JàD, Reflex), dans la mesure du possible en fonction du nombres évadés.<br>Éviter de toujours faire les mêmes jeux (jeux map comme hors map). Faites travaillez votre imagination.</li>
+                            <li>Il est interdit d'éliminer tout les prisonniers jusqu'à la DV au premier jeu sauf si il y a moins de 4 prisonniers. </li>
+                            <li>Dans cette rubrique sont présentés les jeux les plus usuels et quelques règles les concernant.</li>
+                            <li>Un jeu doit pouvoir être gagné d'une manière ou d'une autre, et ce pour tous les prisonniers à chances égales.</li>
+                            <li>Les jeux commencent toujours par un décompte (surtout la corde à sauter, le wipeout, la race, …).</li>
+                            <li>Un prisonnier s'échappant d'un jeu ayant commencé est considéré comme perdant automatiquement.</li>
+                            <li>Dans les jeux d'éliminations individuel (Q/R, JAD, disco...) seul le chef des gardiens (voir <a href="gardiens.html">Le Warden</a>) élimine les prisonniers.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <hr>
+
+                <div class="accordion-item">
+                    <button id="accordion-button-2" aria-expanded="false">
+                        <span class="accordion-title">Questions / Réponses</span>
+                        <span class="material-symbols-rounded icon" aria-hidden="true">expand_more</span>
+                    </button>
+                    <div class="accordion-content">
+                        <ul class="desc">
+                            <li>Les questions se posent par écrit ou clairement à l'oral, se répondent par écrit et seule la bonne réponse est acceptée.<br>Une personne de niveau troisième (France) (13 ans ou plus) doit pouvoir répondre aux questions.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="../../assets/js/navbar.js"></script>
+    <script src="../../assets/js/sidebar.js"></script>
+    <script src="../../assets/js/accordion.js"></script>
+
+</body>
+
+</html>

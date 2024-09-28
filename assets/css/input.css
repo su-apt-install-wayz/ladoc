@@ -1,0 +1,82 @@
+@import url('defaultStyle.css');
+
+.content .search {
+    position: relative;
+}
+
+.search i {
+    position: absolute;
+    top: 50%;
+    left: 15px;
+
+    transform: translateY(-50%);
+
+    color: var(--text-color);
+
+    font-size: 20px;
+
+    pointer-events: none;
+}
+
+.search input {
+    height: 50px;
+    width: 100%;
+
+    outline: none;
+
+    font-size: 17px;
+
+    border-radius: 10px;
+    border: 1px solid var(--border-color);
+
+    padding: 0 20px 0 43px;
+
+    background: var(--background-color);
+
+    color: var(--text-color);
+}
+
+.search input:focus {
+    border: 1px solid var(--primary-color-52);
+}
+
+.inputIPServer {
+    margin: auto auto 0 auto;
+    display: flex;
+    width: 100%;
+    gap: 10px;
+}
+
+.inputIPServer code {
+    width: 100%;
+    padding: 10px;
+    border-radius: 6px;
+    background: var(--border-color);
+}
+
+.inputIPServer button {
+    background: var(--primary-color);
+    border: 1px solid var(--primary-color);
+    border-radius: 6px;
+
+    color: var(--text-color);
+
+    padding: 10px;
+    width: 65px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    cursor: pointer;
+}
+
+.inputIPServer button i {
+    width: 100%;
+}
+
+@media screen and (max-width: 830px) {
+    .inputIPServer {
+        display: none;
+    }
+}

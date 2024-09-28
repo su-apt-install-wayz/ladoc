@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <link rel="stylesheet" href="../../assets/css/style.css">
+    <link rel="stylesheet" href="../../assets/css/input.css">
+    <link rel="stylesheet" href="../../assets/css/accordion.css">
+    <title>Règlement | Les prisonniers</title>
+</head>
+
+<body>
+    <header id="nav" class="sidebar">
+        <div class="logo">
+            <a href="../../index.html">LaDoc<span class="colorLogo">.wiki</span></a>
+        </div>
+    
+        <div class="border"></div>
+    
+        <ul class="list">
+            <a href="../../index.html" class="list-item">Accueil</a>
+    
+            <ul class="secondary-list">
+                <li class="list-item title">Mode BaJail</li>
+    
+                <a href="../nous-decouvrir.html" class="list-item">Nous découvrir</a>
+                <a href="../reglement.html" class="list-item">Le règlement</a>
+                <a href="../liens.html" class="list-item">Liens utiles</a>
+
+                <li class="list-item title">Liens directs</li>
+    
+                <a href="toto" class="list-item">Active</a>
+                <a href="toto" class="list-item">CSSBans</a>
+                <a href="https://discord.gg/stQuAKWNPc" target="blank" class="list-item">Discord</a>
+            </ul>
+    
+        </ul>
+
+        <div class="inputIPServer">
+            <code id="ipAddress">cs.ladoc.wiki:27396</code>
+            <button id="ipAddressButton" onclick="copyIP()">Copier</button>
+        </div>
+    </header>
+
+    <main>
+        <div class="content">
+            <div class="title">Les prisonniers</div>
+
+            <p class="desc big">Le prisonnier a pour but de respecter les ordres donnés par le Warden afin d'être le dernier survivant et d'obtenir sa dernière volonté.</p>
+
+            <div class="accordion">
+                <div class="accordion-item">
+                    <button id="accordion-button-1" aria-expanded="true">
+                        <span class="accordion-title">Interdictions</span>
+                        <span class="material-symbols-rounded icon" aria-hidden="true">expand_more</span>
+                    </button>
+                    <div class="accordion-content">
+                        <ul class="desc">
+                            <li>Il est interdit de tirer des grenades ou avec une arme dans les jails avant leur ouverture.</li>
+                            <li>Il est interdit de se cacher dans une jail après ouverture (camp-jail).</li>
+                            <li>Il est interdit de mettre en danger les autres terroristes.</li>
+                            <li>Il est interdit de dénoncer la position d'un autre terroriste.</li>
+                            <li>Il est interdit de se cacher et de bloquer la partie (camp conduit sauf sortie bloquée par la présence de l'ordre donc des CT).</li>
+                            <li>Il est interdit de se rebeller après avoir répondu " Oui " à la demande de prise de DV (sauf DV rebelle), ou après une DV normal.</li>
+                            <li>Éviter de vous collez aux CT au moment de chosir votre DV, et inversement pour les CT : nous vous collez pas au T.</li>
+                            <li>Il est interdit de toucher aux boutons autres que porte ou similaire.</li>
+                            <li>Interdiction de camp téléporteur (exemple sur clouds : un évadé camp l'arrivé des gardiens au téléporteur entre les deux îles)</li>
+                            <li>Interdiction de tirer dans l'armurerie</li>
+                            <li>Si un prisonnier s'évade et trouve une arme (sauf si l'arme est dans sa jail) il n'a pas le droit d'aller se repacker à l'ordre avec les autres prisonniers</li>
+                            <li>Les prisonniers peuvent toucher aux boutons des discothèques seulement en QL.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="../../assets/js/navbar.js"></script>
+    <script src="../../assets/js/sidebar.js"></script>
+    <script src="../../assets/js/accordion.js"></script>
+
+</body>
+
+</html>

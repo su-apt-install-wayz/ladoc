@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <link rel="stylesheet" href="../../assets/css/style.css">
+    <link rel="stylesheet" href="../../assets/css/input.css">
+    <link rel="stylesheet" href="../../assets/css/accordion.css">
+    <title>Règlement | Les gardiens</title>
+</head>
+
+<body>
+    <header id="nav" class="sidebar">
+        <div class="logo">
+            <a href="../../index.html">LaDoc<span class="colorLogo">.wiki</span></a>
+        </div>
+    
+        <div class="border"></div>
+    
+        <ul class="list">
+            <a href="../../index.html" class="list-item">Accueil</a>
+    
+            <ul class="secondary-list">
+                <li class="list-item title">Mode BaJail</li>
+    
+                <a href="../nous-decouvrir.html" class="list-item">Nous découvrir</a>
+                <a href="../reglement.html" class="list-item">Le règlement</a>
+                <a href="../liens.html" class="list-item">Liens utiles</a>
+
+                <li class="list-item title">Liens directs</li>
+    
+                <a href="toto" class="list-item">Active</a>
+                <a href="toto" class="list-item">CSSBans</a>
+                <a href="https://discord.gg/stQuAKWNPc" target="blank" class="list-item">Discord</a>
+            </ul>
+    
+        </ul>
+
+        <div class="inputIPServer">
+            <code id="ipAddress">cs.ladoc.wiki:27396</code>
+            <button id="ipAddressButton" onclick="copyIP()">Copier</button>
+        </div>
+    </header>
+
+    <main>
+        <div class="content">
+            <div class="title">Les gardiens</div>
+
+            <p class="desc big">Les gardiens ont pour but d'encadrer les prisonniers afin d'aider le Warden dans l'accomplissement de ses ordres.</p>
+
+            <div class="accordion">
+                <div class="accordion-item">
+                    <button id="accordion-button-1" aria-expanded="false">
+                        <span class="accordion-title">Règles générales</span>
+                        <span class="material-symbols-rounded icon" aria-hidden="true">expand_more</span>
+                    </button>
+                    <div class="accordion-content">
+                        <ul class="desc">
+                            <li>La seule sommation autorisée est la sommation orale. (Serveur Kill)</li>
+                            <li>Il est autorisé de se défendre si un prisonnier se montre hostile et vous attaque sauf si vous cherchez le cut.</li>
+                            <li>Un prisonnier peut être « hostile » si vous ne l'avez pas tuer. C'est un statut permanent qui est attribué par un gardien après qu'il lui ai demandé de se rendre.</li>
+                            <li>Après l'ouverture des jails, des ordres peuvent être donner, les prisonniers qui ne le respectent pas peuvent être tués sans sommation orale.</li>
+                            <li>Le dernier gardien en vie peut tout faire, l'annonce du DCT n'est pas obligatoire mais préférable.</li>
+                            <li>Être DCT n'est autorisé que si il a eu plus de 3 CT au DÉBUT du round ( kill par un terro ou le monde, le slay/kick/ban/swap ne compte pas).</li>
+                            <li>Être a son ordre signifie être à l'endroit désignée par le chef des gardiens, voir le groupe principal de terro (à l'ordre ) et si possible le chef des gardiens, tout en étant à une distance raisonnable.</li>
+                            <li>Un gardien ne peut pas voir un terro ( par exemple lancé une HE ) si il est packé avec un groupe de terro.</li>
+                            <li>Les conduits sont invisibles aux yeux des CT, sauf si un terro a tiré à l'intérieur ( conduit visible ).</li>
+                            <li>Dans un conduit, si un T a une arme en main et est identifiable (dépacké d'un autre T) il est visible (uniquement le T, le conduit n'est pas visible si il n'y a pas eu de tirs a l'intérieur).</li>
+                            <li>Les CT ont le droit de se défendre dans les jails.</li>
+                            <li>Le ratio "idéal" est de 1 gardien, pour 2 prisonniers, ce ratio n'est pas forcément fixe, un staff peut demander des changements d'équipe en fonction de la map et de comment ça se passe.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <hr>
+
+                <div class="accordion-item">
+                    <button id="accordion-button-2" aria-expanded="false">
+                        <span class="accordion-title">Le Warden (chef CT)</span>
+                        <span class="material-symbols-rounded icon" aria-hidden="true">expand_more</span>
+                    </button>
+                    <div class="accordion-content">
+                        <ul class="desc">
+                            <li>Il est celui qui va diriger la prison le temps d'un round (ou moins…). Il est le seul à pouvoir donner des ordres.</li>
+                            <li>Si le chef des gardiens désigné ne veut/peut pas assurer les ordres, alors les gardiens peuvent s'accorder sur un nouveau chef. Celui-ci reste chef jusqu'à sa mort.</li>
+                            <li>Le chef des gardiens est responsable de l'ouverture des jails : il doit les ouvrir, avec ou sans ordre. S'il ne peut pas les ouvrir, il doit clairement le signaler à l'oral ou à l'écrit.</li>
+                            <li>Le warden doit demander au dernier prisonnier en vie s'il souhaite prendre sa dernière volonté (voir <a href="derniere-volonte.html">Dernière Volonté</a>)</li>
+                            <li>Les joueurs sans micros ne peuvent pas devenir chef des gardiens.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <hr>
+
+                <div class="accordion-item">
+                    <button id="accordion-button-3" aria-expanded="false">
+                        <span class="accordion-title">Autorisations</span>
+                        <span class="material-symbols-rounded icon" aria-hidden="true">expand_more</span>
+                    </button>
+                    <div class="accordion-content">
+                        <ul class="desc">
+                            <li>Il est autorisé de tuer des prisonniers hostiles (voir <a href="./hostilite.html">Hostilité</a>).</li>
+                            <li>Il est autorisé d'utiliser le pseudonyme d'un prisonnier pour l'identifier et de signaler à l'oral « Untel hostile ». Un prisonnier perdu de vue et non identifiable n'est plus hostile, à moins de l'avoir déclaré comme tel à l'oral.</li>
+                            <li>Il est autorisé de ramasser les armes dropées par les joueurs (vivants ou morts, gardiens ou prisonniers).</li>
+                            <li>Le dernier gardien a tous les droits (tuer jusqu'à la DV, passer dans les conduits, …).</li>
+                            <li>Il est autorisé aux joueurs sans micro de jouer en gardien à conditions qu'il y ai suffisamment de CT pour prendre les ordres.</li>
+                            <li>Les CTs peuveut kill directement les AKFs JAILS après 15 secondes de jeu.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <hr>
+
+                <div class="accordion-item">
+                    <button id="accordion-button-4" aria-expanded="false">
+                        <span class="accordion-title">Interdictions</span>
+                        <span class="material-symbols-rounded icon" aria-hidden="true">expand_more</span>
+                    </button>
+                    <div class="accordion-content">
+                        <ul class="desc">
+                            <li>Il est interdit de tuer des prisonniers innocents (freekill), de leur infliger des dégâts sans raison valable (freeshot) ou de déclarer un prisonnier hostile sans raison.</li>
+                            <li>Il est interdit d'emprunter ou de casser les conduits ou les téléporteurs.</li>
+                            <li>Il est interdit de prendre les armes présentes autre part que dans l'armurerie, sauf en zone CT (voir : Les Zones ).</li>
+                            <li>Il est interdit de se mettre en danger volontairement (aller dans un pack de prisonnier, entrer dans un jeu, …).</li>
+                            <li>Il est interdit de mettre en danger les autres gardiens.</li>
+                            <li>Il est interdit de rester dans l'armurerie après l'ouverture des jails.</li>
+                            <li>Il est interdit de jouer avec les mots du styles (a mon GO et dire TOP).</li>
+                            <li>Toute collaboration avec les prisonniers est interdite (don d'arme pleine ou vide, aide à la rébellion, favoritisme).</li>
+                            <li>Il est interdit d'attaquer un prisonnier sans raison.</li>
+                            <li>Il est interdit d'emprunter les conduits.</li>
+                            <li>Il interdit en CT de lancer des grenades ( smoke, flash, HE, ou quoi que ce soit d'autres ).</li>
+                            <li>Les gardiens n'ont pas le droit de spray dans les fumigènes, de courtes rafales sans en abusez reste toléré.</li>
+                            <li>Interdiction de camp téléporteur (exemple sur clouds : un évadé camp l'arrivé des gardiens au téléporteur entre les deux îles).</li>
+                            <li>Interdiction de tirer dans l'armurerie.</li>
+                            <li>Camper devant ou dans l'armurerie.</li>
+                            <li>Le DCT n'a pas le droit de camp armurerie.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="../../assets/js/navbar.js"></script>
+    <script src="../../assets/js/sidebar.js"></script>
+    <script src="../../assets/js/accordion.js"></script>
+
+</body>
+
+</html>
