@@ -6,10 +6,10 @@ header {
     top: 0;
     left: 0;
 
-    z-index: 99;
+    z-index: 99999;
 
     height: 100vh;
-    width: 311px;
+    width: 310px;
 
     display: flex;
     flex-direction: column;
@@ -25,12 +25,9 @@ header {
 
 header .logo {
     color: var(--text-color);
-
     font-size: 40px;
     font-weight: 700;
-
     line-height: normal;
-
     transition: 0.3s;
 }
 
@@ -42,13 +39,13 @@ header .logo a {
     color: var(--primary-color);
 }
 
-.border {
+header .border {
     height: 1px;
     width: 100%;
-
     background-color: var(--border-color);
-
-    margin-top: calc(24px - 13px);
+    outline: none;
+    border: none;
+    margin: 10px 0;
 }
 
 header .list {
@@ -104,80 +101,27 @@ header .secondary-list a:is(.list-item).active {
     transform: translateX(30px);
 }
 
-header .account {
-    margin: auto auto 0 0;
-
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-
-    width: 100%;
-}
-
-header .account .input_btn {
-    border: 1px solid var(--primary-color);
-    border-radius: 5px;
-
-    color: var(--text-color);
-
-    padding: 10px 1rem;
-    width: 100%;
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    cursor: pointer;
-}
-
-header .account .input_btn.register {
-    color: var(--text-color-register);
-}
-
-header .account .input_btn.login {
-    color: var(--text-color-login);
-}
-
-header .account .input_btn.login {
-    background-color: var(--primary-color);
-}
-
-header .account .input_btn.deco {
-    background-color: red;
-    color: #EAF2F7;
-    border: 1px solid red;
-}
-
-
-
 @media screen and (max-width: 830px) {
     header {
         justify-content: space-between;
         flex-direction: row;
         align-items: center;
-
         height: 80px;
         width: 100%;
-
         border-right: none;
         border-bottom: 1px solid var(--border-color);
-
         gap: 0;
-
         padding: 0 2rem;
-
         transition: 0.3s;
     }
 
     header.scrolled-down {
         height: 65px;
-
         transition: 0.3s;
     }
 
     header.scrolled-down .logo {
         font-size: 30px;
-
         transition: 0.3s;
     }
 
@@ -187,15 +131,5 @@ header .account .input_btn.deco {
 
     header .border {
         display: none;
-    }
-
-    header .account {
-        margin: 0;
-        width: max-content;
-        flex-direction: row;
-    }
-
-    header .account .input_btn {
-        width: max-content;
     }
 }

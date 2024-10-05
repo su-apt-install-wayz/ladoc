@@ -2,22 +2,6 @@
 @import url('sidebar.css');
 @import url('footer.css');
 
-.iframe {
-    width: 100%;
-    border-radius: 10px;
-}
-
-main .content {
-    max-width: 50vw;
-    width: 100%;
-    height: max-content;
-
-    display: flex;
-    flex-direction: column;
-
-    gap: 18px;
-}
-
 main .content .title {
     color: var(--text-color);
 
@@ -45,7 +29,7 @@ main .content a.data {
     padding: 1rem;
     border-radius: 6px;
     background: var(--primary-color);
-    color: var(--text-color-login);
+    color: var(--text-color);
 }
 
 main .content .desc.big {
@@ -57,7 +41,7 @@ main .content .desc.big {
 main .content ul.desc {
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 20px;
 }
 
 main .content ul.desc a {
@@ -146,14 +130,6 @@ main .content .list .list-item .textes .title {
 main .content .list .list-item .icon {
     color: var(--text-color-gray);
 }
-
-
-@media screen and (max-width: 830px) {
-    main .content {
-        max-width: 95vw;
-    }
-}
-
 
 @media screen and (max-width: 360px){
     main .content .title {
