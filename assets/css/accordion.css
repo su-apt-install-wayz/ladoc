@@ -62,22 +62,25 @@
     transform: rotate(-180deg);
 }
 
-.accordion button[aria-expanded=true]+.accordion-content {
+.accordion button[aria-expanded=true] + .accordion-content {
+    margin-top: 20px;
     opacity: 1;
-    max-height: 100em;
-    transition: all 500ms linear;
-    will-change: opacity, max-height;
+    max-height: 1000px;
+    transition: opacity 500ms linear, max-height 500ms ease-in-out, margin-top 500ms ease;
+    will-change: opacity, max-height, margin-top;
 }
 
 .accordion .accordion-content {
+    margin-top: 0;
     opacity: 0;
     max-height: 0;
     overflow: hidden;
-    transition: opacity 300ms linear, max-height 300ms linear;
-    will-change: opacity, max-height;
+    transition: opacity 300ms linear, max-height 500ms ease-in-out, margin-top 500ms ease;
+    will-change: opacity, max-height, margin-top;
     display: flex;
     flex-direction: column;
 }
+
 
 .accordion .accordion-content ul {
     display: flex;
@@ -89,6 +92,14 @@
     display: flex;
     flex-direction: column;
     gap: 10px;
+}
+
+.accordion .accordion-content ul li p {
+    color: var(--text-color-gray);
+}
+
+.accordion .accordion-content ul li strong {
+    color: var(--text-color);
 }
 
 .accordion .accordion-content ul li .medias {

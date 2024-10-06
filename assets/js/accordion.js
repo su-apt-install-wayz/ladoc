@@ -1,15 +1,21 @@
-const accordion = document.querySelectorAll(".accordion button");
+const accordions = document.querySelectorAll(".accordion button");
 
 function toggleAccordion() {
-  const itemToggle = this.getAttribute('aria-expanded');
-  
-  for (i = 0; i < accordion.length; i++) {
-    accordion[i].setAttribute('aria-expanded', 'false');
-  }
-  
-  if (itemToggle == 'false') {
+  const isExpanded = this.getAttribute('aria-expanded') === 'true';
+
+  accordions.forEach((btn) => {
+    btn.setAttribute('aria-expanded', 'false');
+    const content = btn.nextElementSibling;
+    content.style.maxHeight = 0;
+    content.style.opacity = 0;
+  });
+
+  if (!isExpanded) {
     this.setAttribute('aria-expanded', 'true');
+    const content = this.nextElementSibling;
+    content.style.maxHeight = content.scrollHeight + "px";
+    content.style.opacity = 1;
   }
 }
 
-accordion.forEach(item => item.addEventListener('click', toggleAccordion));
+accordions.forEach(item => item.addEventListener('click', toggleAccordion));
