@@ -38,17 +38,6 @@ main .content .desc.big {
     font-size: 25px;
 }
 
-main .content ul.desc {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-}
-
-main .content ul.desc a {
-    color: var(--primary-color);
-    text-decoration: underline;
-}
-
 main .content .home_img {
     width: 100%;
     height: 230px;
