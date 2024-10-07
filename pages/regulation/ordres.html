@@ -18,26 +18,26 @@
         <div class="logo">
             <a href="../../index.html">LaDoc<span class="colorLogo">.wiki</span></a>
         </div>
-    
+
         <div class="border"></div>
-    
+
         <ul class="list">
             <a href="../../index.html" class="list-item">Accueil</a>
-    
+
             <ul class="secondary-list">
                 <li class="list-item title">Mode BaJail</li>
-    
+
                 <a href="../nous-decouvrir.html" class="list-item">Nous découvrir</a>
                 <a href="../reglement.html" class="list-item">Le règlement</a>
                 <a href="../liens.html" class="list-item">Liens utiles</a>
 
                 <li class="list-item title">Liens directs</li>
-    
+
                 <a href="toto" class="list-item">Active</a>
                 <a href="toto" class="list-item">CSSBans</a>
                 <a href="https://discord.gg/stQuAKWNPc" target="blank" class="list-item">Discord</a>
             </ul>
-    
+
         </ul>
 
         <div class="inputIPServer">
@@ -55,24 +55,72 @@
             <div class="accordion">
                 <div class="accordion-item">
                     <button id="accordion-button-1" aria-expanded="false">
+                        <span class="accordion-title">Les ordres valides</span>
+                        <span class="material-symbols-rounded icon" aria-hidden="true">expand_more</span>
+                    </button>
+                    <div class="accordion-content">
+                        <ul>
+                            <li>
+                                <p><strong>Guncheck</strong> : Un guncheck peut être lancé si un prisonnier est vu avec
+                                    une arme en main. Pendant un guncheck, les prisonniers doivent être immobiles,
+                                    debout, face au repère et regarder leurs pieds. Un guncheck ne peut durer que 45
+                                    secondes maximum. Pendant un round, 2 gunchecks peuvent être lancés.</p>
+                            </li>
+                            <li>
+                                <p><strong>Ordres individuels</strong> : Les Gardiens peuvent donner des ordres
+                                    individuels aux prisonniers (ex. rattraper le groupe).</p>
+                            </li>
+                            <li>
+                                <p><strong>Ordres avant ouverture des jails</strong> : Le premier ordre doit être donné
+                                    avant l'ouverture automatique des jails.</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <hr>
+
+                <div class="accordion-item">
+                    <button id="accordion-button-2" aria-expanded="false">
                         <span class="accordion-title">Les ordres abusifs</span>
                         <span class="material-symbols-rounded icon" aria-hidden="true">expand_more</span>
                     </button>
                     <div class="accordion-content">
-                        <ul class="desc">
-                            <li>Un ordre abusif est un ordre invalide, il ne doit pas être pris en compte par les joueurs. Les ordres abusifs sont les suivants :</li>
-                            <li>« accroupi »</li>
-                            <li>« en cuttant »</li>
-                            <li>« en sautant »</li>
-                            <li>« cut en main »</li>
-                            <li>« personne ne ramasse l'arme par terre ( sauf ordre individuel ) »</li>
-                            <li>Les ordres mettant les prisonniers en danger (rester sous l'eau, aller sur un laser, …)</li>
-                            <li>Les ordres rendant les prisonniers hostiles (aller zone CT, attaquer un gardien, …)</li>
-                            <li>Les ordres forçant une action dans les jails</li>
-                            <li>Les ordres forçant la direction du regard (sauf dans le cadre d'un jeu/guncheck)</li>
-                            <li>Les ordres donnés à l'écrit (sauf dans le cadre d'un jeu)</li>
-                            <li>Les ordres impossibles à effectuer.</li>
-                            <li>Un ordre abusif peut être rectifié par le chef des gardiens et ne donne pas automatiquement lieu à un QL.</li>
+                        <ul>
+                            <li>
+                                <p><strong>Les ordres suivants sont considérés comme abusifs et de doivent pas être pris en compte par les prisonniers :</strong></p>
+                                <ul>
+                                    <li>
+                                        <p>Accroupi</p>
+                                    </li>
+                                    <li>
+                                        <p>En cuttant</p>
+                                    </li>
+                                    <li>
+                                        <p>En sautant</p>
+                                    </li>
+                                    <li>
+                                        <p>Cut en main</p>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <p><strong>Arme au sol</strong> : Il est interdit de forcer les prisonniers à ne pas
+                                    ramasser une arme au sol sans donner d'ordre individuel.</p>
+                            </li>
+                            <li>
+                                <p><strong>Danger pour le prisonnier</strong> : Il est interdit de donner des ordres
+                                    mettant un prisonnier en danger (aller sous l’eau, sur un laser, etc.) ou le rendant
+                                    hostile (ex. aller zone CT, attaquer un gardien, …).</p>
+                            </li>
+                            <li>
+                                <p><strong>Position et regard</strong> : Tout ordre qui force une action dans les jails
+                                    ou la direction du regard (sauf dans le cadre d’un jeu ou guncheck).</p>
+                            </li>
+                            <li>
+                                <p><strong>Ordre à l'écrit</strong> : Tout ordre qui est donné à l'écrit (sauf dans le
+                                    cadre d’un jeu ou d'un évènement).</p>
+                            </li>
                         </ul>
                     </div>
                 </div>

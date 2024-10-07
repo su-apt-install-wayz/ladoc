@@ -18,26 +18,26 @@
         <div class="logo">
             <a href="../../index.html">LaDoc<span class="colorLogo">.wiki</span></a>
         </div>
-    
+
         <div class="border"></div>
-    
+
         <ul class="list">
             <a href="../../index.html" class="list-item">Accueil</a>
-    
+
             <ul class="secondary-list">
                 <li class="list-item title">Mode BaJail</li>
-    
+
                 <a href="../nous-decouvrir.html" class="list-item">Nous découvrir</a>
                 <a href="../reglement.html" class="list-item">Le règlement</a>
                 <a href="../liens.html" class="list-item">Liens utiles</a>
 
                 <li class="list-item title">Liens directs</li>
-    
+
                 <a href="toto" class="list-item">Active</a>
                 <a href="toto" class="list-item">CSSBans</a>
                 <a href="https://discord.gg/stQuAKWNPc" target="blank" class="list-item">Discord</a>
             </ul>
-    
+
         </ul>
 
         <div class="inputIPServer">
@@ -50,28 +50,84 @@
         <div class="content">
             <div class="title">Les prisonniers</div>
 
-            <p class="desc big">Le prisonnier a pour but de respecter les ordres donnés par le Warden afin d'être le dernier survivant et d'obtenir sa dernière volonté.</p>
+            <p class="desc big">Le prisonnier a pour but de respecter les ordres donnés par le Warden afin d'être le
+                dernier survivant et d'obtenir sa dernière volonté.</p>
 
             <div class="accordion">
                 <div class="accordion-item">
-                    <button id="accordion-button-1" aria-expanded="true">
+                    <button id="accordion-button-1" aria-expanded="false">
                         <span class="accordion-title">Interdictions</span>
                         <span class="material-symbols-rounded icon" aria-hidden="true">expand_more</span>
                     </button>
                     <div class="accordion-content">
-                        <ul class="desc">
-                            <li>Il est interdit de tirer des grenades ou avec une arme dans les jails avant leur ouverture.</li>
-                            <li>Il est interdit de se cacher dans une jail après ouverture (camp-jail).</li>
-                            <li>Il est interdit de mettre en danger les autres terroristes.</li>
-                            <li>Il est interdit de dénoncer la position d'un autre terroriste.</li>
-                            <li>Il est interdit de se cacher et de bloquer la partie (camp conduit sauf sortie bloquée par la présence de l'ordre donc des CT).</li>
-                            <li>Il est interdit de se rebeller après avoir répondu " Oui " à la demande de prise de DV (sauf DV rebelle), ou après une DV normal.</li>
-                            <li>Éviter de vous collez aux CT au moment de chosir votre DV, et inversement pour les CT : nous vous collez pas au T.</li>
-                            <li>Il est interdit de toucher aux boutons autres que porte ou similaire.</li>
-                            <li>Interdiction de camp téléporteur (exemple sur clouds : un évadé camp l'arrivé des gardiens au téléporteur entre les deux îles)</li>
-                            <li>Interdiction de tirer dans l'armurerie</li>
-                            <li>Si un prisonnier s'évade et trouve une arme (sauf si l'arme est dans sa jail) il n'a pas le droit d'aller se repacker à l'ordre avec les autres prisonniers</li>
-                            <li>Les prisonniers peuvent toucher aux boutons des discothèques seulement en QL.</li>
+                        <ul>
+                            <li>
+                                <p><strong>Utilisation d'armes</strong> : Il est interdit de tirer des grenades ou d’utiliser une arme dans les jails avant leur ouverture. Il est interdit de tirer dans l'armuerie.</p>
+                            </li>
+                            <li>
+                                <p><strong>Danger</strong> : Les Détenus ne doivent pas mettre en danger les autres
+                                    terroristes.</p>
+                            </li>
+                            <li>
+                                <p><strong>Camp-jail</strong> : Il est interdit de se cacher dans une jail après son ouverture.</p>
+                            </li>
+                            <li>
+                                <p><strong>Trahison</strong> : Les prisonniers ne peuvent pas dénoncer leurs compagnons.</p>
+                            </li>
+                            <li>
+                                <p><strong>Éviter les blocages</strong> : Il est interdit de se cacher ou de bloquer le jeu (ex. camp conduit), sauf si la sortie est bloquée par l'ordre des Gardiens.</p>
+                            </li>
+                            <li>
+                                <p><strong>Dernière Volonté</strong> : Après avoir accepté de prendre une Dernière Volonté (DV), il est interdit de se rebeller, sauf en cas de DV rebelle.</p>
+                            </li>
+                            <li>
+                                <p><strong>Boutons</strong> : Les prisonniers ne peuvent pas toucher aux boutons autres que ceux des portes, sauf les boutons dans les discothèques en quartier libre (QL).</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <hr>
+
+                <div class="accordion-item">
+                    <button id="accordion-button-2" aria-expanded="false">
+                        <span class="accordion-title">L'Hostilité</span>
+                        <span class="material-symbols-rounded icon" aria-hidden="true">expand_more</span>
+                    </button>
+                    <div class="accordion-content">
+                        <ul>
+                            <li>
+                                <p><strong>Un prisonnier est déclaré hostile si :</strong></p>
+                                <p>Il inflige des dégâts à un gardien.</p>
+                                <p>Il a une arme en main.</p>
+                                <p>Il jette une grenade ou une molotov en direction d’un gardien.</p>
+                                <p>Il ne respecte pas un ordre ou une sommation.</p>
+                                <p>Il tente de s’évader.</p>
+                                <p>Il entre en zone CT ou retourne dans une jail après ouverture.</p>
+                                <p>Il reprend une arme qu'il a jetée après une sommation.</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <hr>
+
+                <div class="accordion-item">
+                    <button id="accordion-button-3" aria-expanded="false">
+                        <span class="accordion-title">La Dernière Volonté</span>
+                        <span class="material-symbols-rounded icon" aria-hidden="true">expand_more</span>
+                    </button>
+                    <div class="accordion-content">
+                        <ul>
+                            <li>
+                                <p><strong>Dernière Volonté</strong> : Lorsque le dernier prisonnier reste en vie, il a droit à une "Dernière Volonté", un mini-jeu choisi parmi une liste.</p>
+                            </li>
+                            <li>
+                                <p><strong>Règles de la DV</strong> : Si un prisonnier accepte sa DV, il ne peut plus la refuser. Un prisonnier déclaré hostile ne peut plus prendre de DV. Il est interdit d'aller à l'infirmerie pendant une DV.</p>
+                            </li>
+                            <li>
+                                <p><strong>Course en DV</strong> : La course doit avoir un point de départ et d’arrivée visibles, mais elle ne peut pas passer par un conduit.</p>
+                            </li>
                         </ul>
                     </div>
                 </div>

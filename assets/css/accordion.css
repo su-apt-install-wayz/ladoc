@@ -128,6 +128,25 @@
     text-decoration: underline;
 }
 
+.accordion .accordion-content ul li ul {
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+    padding-left: 20px;
+}
+
+.accordion .accordion-content ul li ul li {
+    position: relative;
+}
+
+.accordion .accordion-content ul li ul li::before {
+    position: absolute;
+    content: '•';
+    left: -10px;
+    color: inherit;
+    font-size: 1em;
+}
+
 .accordion .accordion-content hr {
     width: 100%;
     height: 1px;
