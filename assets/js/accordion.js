@@ -19,3 +19,20 @@ function toggleAccordion() {
 }
 
 accordions.forEach(item => item.addEventListener('click', toggleAccordion));
+
+function getURLParameter(name) {
+  return new URLSearchParams(window.location.search).get(name);
+}
+
+const accordionId = getURLParameter('open');
+if (accordionId) {
+  const accordionButton = document.getElementById('accordion-button-' + accordionId);
+  if (accordionButton) {
+    accordionButton.setAttribute('aria-expanded', 'true');
+    const content = accordionButton.nextElementSibling;
+    setTimeout(() => {
+      content.style.maxHeight = content.scrollHeight + "px";
+      content.style.opacity = 1;
+    }, 100);
+  }
+}
