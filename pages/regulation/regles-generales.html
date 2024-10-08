@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <link rel="stylesheet" href="../../assets/css/style.css">
+    <link rel="stylesheet" href="../../assets/css/input.css">
+    <link rel="stylesheet" href="../../assets/css/accordion.css">
+    <title>Règlement | Les règles générales</title>
+</head>
+
+<body>
+    <header id="nav" class="sidebar">
+        <div class="logo">
+            <a href="../../index.html">LaDoc<span class="colorLogo">.wiki</span></a>
+        </div>
+
+        <div class="border"></div>
+
+        <ul class="list">
+            <a href="../../index.html" class="list-item">Accueil</a>
+
+            <ul class="secondary-list">
+                <li class="list-item title">Mode BaJail</li>
+
+                <a href="../nous-decouvrir.html" class="list-item">Nous découvrir</a>
+                <a href="../reglement.html" class="list-item">Le règlement</a>
+                <a href="../liens.html" class="list-item">Liens utiles</a>
+
+                <li class="list-item title">Liens directs</li>
+
+                <a href="toto" class="list-item">Active</a>
+                <a href="toto" class="list-item">CSSBans</a>
+                <a href="https://discord.gg/stQuAKWNPc" target="blank" class="list-item">Discord</a>
+            </ul>
+
+        </ul>
+
+        <div class="inputIPServer">
+            <code id="ipAddress">cs.ladoc.wiki:27396</code>
+            <button id="ipAddressButton" onclick="copyIP()">Copier</button>
+        </div>
+    </header>
+
+    <main>
+        <div class="content">
+            <div class="title">Les règles générales</div>
+
+            <p class="desc big">Le mode BaJail est une simulation de milieu carcéral où deux équipes s’affrontent : les
+                Gardiens (CT) et les Détenus (T). Le but des Gardiens est de maintenir l’ordre en donnant des
+                instructions aux Détenus, qui doivent les suivre sous peine de représailles. Ce règlement s'applique
+                exclusivement à nos serveurs.</p>
+
+            <div class="accordion">
+                <div class="accordion-item">
+                    <button id="accordion-button-1" aria-expanded="true">
+                        <span class="accordion-title">Principes généraux</span>
+                        <span class="material-symbols-rounded icon" aria-hidden="true">expand_more</span>
+                    </button>
+                    <div class="accordion-content">
+                        <ul>
+                            <li>
+                                <p><strong>Respect mutuel</strong> : Les insultes et le trashtalk sont interdits. Toute
+                                    forme de non-respect envers les joueurs et le staff sera sanctionnée.</p>
+                            </li>
+                            <li>
+                                <p><strong>Interdiction de l’anti-jeu</strong> : Les comportements anti-jeu sont
+                                    prohibés. Aider les membres de l'équipe adverse (gardien ou prisonnier) est
+                                    strictement interdit.</p>
+                            </li>
+                            <li>
+                                <p><strong>Ordres abusifs</strong> : Certains ordres considérés comme abusifs ne doivent
+                                    pas être suivis (voir la section "Ordres Abusifs").</p>
+                            </li>
+                            <li>
+                                <p><strong>Interdiction des grenades</strong> : Il est interdit de lancer des grenades
+                                    durant les jeux, peu importe leur type.</p>
+                            </li>
+                            <li>
+                                <p><strong>Pseudonymes inappropriés</strong> : Les pseudonymes à connotation religieuse,
+                                    politique ou incitant à la haine sont interdits.</p>
+                            </li>
+                            <li>
+                                <p><strong>Quartier libre</strong> : Un quartier libre (QL) est défini par une absence
+                                    d’ordre ou s'il est annoncé explicitement par le Warden. Si un prisonnier ouvre les
+                                    cellules (jails), cela entraîne un QL forcé, à moins que des ordres n’aient déjà été
+                                    donnés par le chef des gardiens.</p>
+                                <p><strong>Interdictions et restrictions :</strong></p>
+                                <ul>
+                                    <li>
+                                        <p>Le quartier libre individuel est <strong>interdit</strong>.</p>
+                                    </li>
+                                    <li>
+                                        <p>Il est interdit de donner plus de <strong>trois quartiers libres</strong> par
+                                            carte (map).</p>
+                                    </li>
+                                    <li>
+                                        <p>Il est interdit de donner <strong>deux QL à la suite</strong>.</p>
+                                    </li>
+                                    <li>
+                                        <p>Si les jails s'ouvrent <strong>automatiquement</strong> (sans intervention
+                                            d'un
+                                            gardien), cela entraîne un <strong>QL irrévocable</strong>.</p>
+                                    </li>
+                                    <li>
+                                        <p>Les quartiers restreints (QR) sont <strong>interdits</strong>.</p>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="../../assets/js/navbar.js"></script>
+    <script src="../../assets/js/sidebar.js"></script>
+    <script src="../../assets/js/accordion.js"></script>
+
+</body>
+
+</html>
