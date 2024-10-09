@@ -19,8 +19,7 @@ header {
 
     border-right: 1px solid var(--border-color);
 
-    background: var(--background-color-03);
-    backdrop-filter: blur(19px);
+    background: var(--background-color);
 }
 
 header .logo {
@@ -28,7 +27,7 @@ header .logo {
     font-size: 40px;
     font-weight: 700;
     line-height: normal;
-    transition: 0.3s;
+    transition: 300ms;
 }
 
 header .logo a {
@@ -101,6 +100,56 @@ header .secondary-list a:is(.list-item).active {
     transform: translateX(30px);
 }
 
+
+header .burger {
+    display: none;
+}
+
+header .burger_label {
+    display: none;
+    position: relative;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+}
+
+header .burger_label span {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 60%;
+    height: 2px;
+    background: #fff;
+    transition: all 300ms ease-in-out;
+}
+
+header .burger_label span:first-of-type {
+    top: 30%;
+}
+
+header .burger_label span:last-of-type {
+    top: 70%;
+}
+
+header .burger:checked+.burger_label span {
+    opacity: 0;
+    top: 50%;
+}
+
+header .burger:checked+.burger_label span:first-of-type {
+    opacity: 1;
+    transform: translate(-50%, -50%) rotate(405deg);
+    background: var(--primary-color);
+}
+
+header .burger:checked+.burger_label span:last-of-type {
+    opacity: 1;
+    transform: translate(-50%, -50%) rotate(-405deg);
+    background: var(--primary-color);
+}
+
+
 @media screen and (max-width: 830px) {
     header {
         justify-content: space-between;
@@ -112,21 +161,74 @@ header .secondary-list a:is(.list-item).active {
         border-bottom: 1px solid var(--border-color);
         gap: 0;
         padding: 0 2rem;
-        transition: 0.3s;
+        transition: 300ms;
+    }
+
+    header .burger_label {
+        display: block;
+    }
+
+    header a:is(.list-item):hover {
+        transform: translateX(0);
     }
 
     header.scrolled-down {
         height: 65px;
-        transition: 0.3s;
+        transition: 300ms;
+    }
+
+    header .logo {
+        font-size: 30px;
+        transition: 300ms;
     }
 
     header.scrolled-down .logo {
-        font-size: 30px;
-        transition: 0.3s;
+        font-size: 25px;
+        transition: 300ms;
     }
 
     header .list {
-        display: none;
+        position: fixed;
+        top: 80px;
+        left: 0;
+        width: 100%;
+        height: 0;
+        justify-content: center;
+        align-items: center;
+        background: var(--background-color);
+        overflow: hidden;
+        transition: 300ms;
+    }
+
+    header.scrolled-down .list {
+        top: 65px;
+        height: 0;
+    }
+
+    header .list li, header .list ul, header .list a {
+        opacity: 0;
+        transition: 200ms;
+    }
+
+    .burger:checked~.list li, .burger:checked~.list ul, .burger:checked~.list a {
+        opacity: 1;
+        transition: 200ms;
+    }
+
+    .burger:checked~.list {
+        height: calc(100dvh - 80px);
+    }
+
+    .burger:checked~.scrolled-down .list  {
+        height: calc(100dvh - 65px);
+    }
+
+    header .secondary-list {
+        align-items: center;
+    }
+
+    header .secondary-list a:is(.list-item), header .secondary-list a:is(.list-item):hover, header .secondary-list a:is(.list-item).active  {
+        transform: translateX(0);
     }
 
     header .border {
